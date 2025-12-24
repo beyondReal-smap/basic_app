@@ -11,6 +11,11 @@ struct AppTheme {
         startPoint: .topLeading,
         endPoint: .bottomTrailing
     )
+    
+    // Custom Font Helper
+    static func font(_ size: CGFloat, weight: Font.Weight = .regular) -> Font {
+        return Font.custom("StunningSans", size: size).weight(weight)
+    }
 }
 
 extension Color {
