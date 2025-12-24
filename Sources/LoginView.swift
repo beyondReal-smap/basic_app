@@ -60,7 +60,7 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                Button(action: {}) {
+                NavigationLink(destination: SignUpView()) {
                     Text("Don't have an account? Sign Up")
                         .font(.footnote)
                         .foregroundColor(AppTheme.primary)

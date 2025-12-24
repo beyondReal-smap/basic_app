@@ -4,7 +4,9 @@ import SwiftUI
 struct ZeroApp: App {
     var body: some Scene {
         WindowGroup {
-            LoginView()
+            NavigationStack {
+                LoginView()
+            }
         }
     }
 }
